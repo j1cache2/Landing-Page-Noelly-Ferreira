@@ -147,8 +147,8 @@ li:nth-child(3) a:focus::after {
 
 .header .container2 {
     width: 100%;
-    max-width: 1346px;
-    padding: 26px 20px 30px 20px;
+    max-width: 1440px;
+    padding: 26px 0px 30px 20px;
     margin: auto;
 }
 
@@ -164,10 +164,9 @@ li:nth-child(3) a:focus::after {
 .header .container2 .container3 .text h1 {
     font-family: var(--font3);
     font-size: 40px;
-    color: var(--color3);
+    color: var(--color1);
     width: 100%;
-    max-width: 350px;
-    margin-bottom: 15px;
+    max-width: 240px;
 }
 
 .header .container2 .container3 .text p {
@@ -176,18 +175,49 @@ li:nth-child(3) a:focus::after {
     color: var(--color1);
     width: 100%;
     max-width: 470px;
+    margin: 15px 0px;
 }
 
-@media(max-width: 1199px) {
+.header .container2 .container3 .text a {
+    font-family: var(--font1);
+    font-size: 28px;
+    color: var(--color0);
+    text-transform: uppercase;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 260px;
+    height: 50px;
+    background-color: var(--color1);
+}
+
+.header .container2 .container3 .text a:hover {
+    transform: translateY(-5px);
+    transition: 0.5s;
+}
+
+.header .container2 .container3 .text a::after {
+    content: none;
+}
+
+@media (max-width: 1150px) {
     .header .container2 .container3 img {
         width: 100%;
-        max-width: 420px;
+        max-width: 540px;
     }
 }
 
 @media(max-width: 1023px) {
     .menu-top .container1 {
         padding: 15px 0px 24px 0px;
+    }
+
+    .header .container2 {
+        padding: 26px 20px 30px 20px;
     }
 
     .header .container2 .container3 {
@@ -205,6 +235,10 @@ li:nth-child(3) a:focus::after {
 
     .header .container2 .container3 .text p {
         margin: 20px auto;
+    }
+
+    .header .container2 .container3 .text a {
+        margin: 0px auto 30px;
     }
 
     .header .container2 .container3 img {
